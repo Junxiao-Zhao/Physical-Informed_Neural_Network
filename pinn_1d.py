@@ -106,6 +106,7 @@ class LOSS(nn.Module):
         :param data_x: the x-axis of the data points
         :param data_y: the y-axis of the data points
         :param govern_x: the x-axis of sampled points in the range
+        :return: the loss
         """
 
         u_pred = self.dnn(data_x)  # predict y-axis of data points
